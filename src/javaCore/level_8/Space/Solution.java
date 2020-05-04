@@ -1,5 +1,9 @@
 package javaCore.level_8.Space;
 
+
+/**
+ * Calculate the number of spaces and find the ratio of spaces to all characters
+ */
 import java.io.BufferedReader;
 import java.io.FileNotFoundException;
 import java.io.FileReader;
