@@ -1,8 +1,6 @@
 package javaCore.level_8.RoundingDoubleInFile;
 
-import java.io.BufferedReader;
 import java.io.BufferedWriter;
-import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.nio.file.Files;
@@ -11,10 +9,19 @@ import java.util.List;
 import java.util.Scanner;
 import java.util.stream.Collectors;
 
+/*
+ * Read 2 files.
+ * The first file contains real numbers.
+ * Reading the contents of the file.
+ * Write rounded numbers to the second file using the 'Math.round' method.
+ */
+
 public class Solution {
 
+	private static Scanner scanner;
+
 	public static void main(String[] args) throws IOException {
-		Scanner scanner = new Scanner(System.in);
+		scanner = new Scanner(System.in);
 		
 		String fileReader = scanner.nextLine();
 		String fileWriter = scanner.nextLine();

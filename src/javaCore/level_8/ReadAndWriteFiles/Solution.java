@@ -18,8 +18,10 @@ import java.util.stream.Collectors;
  */
 
 public class Solution {
+	private static Scanner scanner;
+
 	public static void main(String [] args) throws IOException {
-		Scanner scanner = new Scanner(System.in);
+		scanner = new Scanner(System.in);
 		
 		String files[] = new String[3];
 		for(int i = 0; i < files.length; i++)
