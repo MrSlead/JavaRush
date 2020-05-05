@@ -22,6 +22,7 @@ public class Solution {
     	
 		@Override
 		public Person read() throws IOException {
+			// Example stroke: Ivanov Ivan Ivanovich 31 04 2000
 			String fullInfoPerson [] = fileScanner.nextLine().split(" ");
 
 			return new Person(fullInfoPerson[1], fullInfoPerson[2], fullInfoPerson[0], 
