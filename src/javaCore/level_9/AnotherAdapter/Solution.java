@@ -1,7 +1,6 @@
 package javaCore.level_9.AnotherAdapter;
 
 import java.io.IOException;
-import java.text.SimpleDateFormat;
 import java.util.GregorianCalendar;
 import java.util.Scanner;
 
@@ -24,11 +23,11 @@ public class Solution {
 		@Override
 		public Person read() throws IOException {
 			String fullInfoPerson [] = fileScanner.nextLine().split(" ");
-			SimpleDateFormat dateFormat = new SimpleDateFormat("ddMMYY");
+
 			return new Person(fullInfoPerson[1], fullInfoPerson[2], fullInfoPerson[0], 
 					new GregorianCalendar(
 							Integer.parseInt(fullInfoPerson[5]), 
-							Integer.parseInt(fullInfoPerson[4]), 
+							Integer.parseInt(fullInfoPerson[4]) - 1, 
 							Integer.parseInt(fullInfoPerson[3]))
 					.getTime());
 		}
