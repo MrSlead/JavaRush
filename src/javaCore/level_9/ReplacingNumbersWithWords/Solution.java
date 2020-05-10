@@ -11,7 +11,7 @@ import java.util.regex.Matcher;
 import java.util.regex.Pattern;                                                  
                                                   
 /*
- * Reads the contents of a file and converts numbers to words.
+ * Reads the contents of a file and converts numbers to words..
  */
                                                   
 public class Solution {                                                  
