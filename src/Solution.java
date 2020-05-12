@@ -1,7 +1,4 @@
-
-/*                                                   
-Externalizable for apartments.                                                 
-*/                                                  
-public class Solution {                                                  
-                                                                                                  
+                                                                                             
+public class Solution {  
+                                                 
 }
