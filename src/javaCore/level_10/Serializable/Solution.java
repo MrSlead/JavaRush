@@ -4,10 +4,7 @@ import java.io.IOException;
 import java.io.ObjectInputStream;                                                  
 import java.io.ObjectOutputStream;
 import java.io.Serializable;                                                  
-                                                  
-/*                                                   
-Переопределение сериализации                                                  
-*/                                                  
+                                                                                                  
 public class Solution implements Serializable, Runnable{                                                  
 	private static final long serialVersionUID = 1L;
 	private transient Thread runner;                                                  
@@ -24,12 +21,12 @@ public class Solution implements Serializable, Runnable{
     }                                                  
                                                   
     /**                                                  
-     * Переопределяем сериализацию.                                                  
-     * Для этого необходимо объявить методы:                                                  
+     * Redefining serialization.                                                  
+     * To do this, you must declare methods:                                                  
      * private void writeObject(ObjectOutputStream out) throws IOException                                                  
      * private void readObject(ObjectInputStream in) throws IOException, ClassNotFoundException                                                  
-     * Теперь сериализация/десериализация пойдет по нашему сценарию :)                                                  
-     */                                                  
+     * Now the serialization/deserialization will go according to our script :)                                                  
+     */                                                
     private void writeObject(ObjectOutputStream out) throws IOException {                                                  
         out.defaultWriteObject();                                                  
     }                                                  
