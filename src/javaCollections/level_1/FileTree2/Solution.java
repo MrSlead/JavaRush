@@ -1,4 +1,4 @@
-package javaCollections.level_1.TreeFile2;
+package javaCollections.level_1.FileTree2;
 
 import java.io.File;
 import java.io.IOException;
