@@ -13,8 +13,7 @@ RMI-2
 */                                                  
 public class Solution {                                                  
     public static Registry registry;                                                  
-    static Cat cat;      
-    static Dog dog;
+                                                  
     // Pretend we're starting an RMI client as the CLIENT_THREAD thread                                                  
     public static Thread CLIENT_THREAD = new Thread(new Runnable() {                                                  
         @Override                                                  
@@ -42,8 +41,8 @@ public class Solution {
             	Remote remoteDog;
 				registry = LocateRegistry.createRegistry(2099);
 				
-				cat = new Cat("Bob");
-				dog = new Dog("Sem");
+				Cat cat = new Cat("Bob");
+				Dog dog = new Dog("Sem");
 				remoteCat = UnicastRemoteObject.exportObject(cat, 0);
 				remoteDog = UnicastRemoteObject.exportObject(dog, 0);
 				
@@ -62,7 +61,7 @@ public class Solution {
         SERVER_THREAD.start();                                                  
                                                          
         // Start the client
-        SERVER_THREAD.join();
+        //SERVER_THREAD.join();
         CLIENT_THREAD.start();                                                  
     }                                                  
 }
