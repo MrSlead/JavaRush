@@ -13,7 +13,6 @@ import java.rmi.server.UnicastRemoteObject;
 */                                                  
 public class Solution {                                                  
     public static final String UNIC_BINDING_NAME = "double.string";
-    //static DoubleStringImpl service;
     public static Registry registry;                                                  
                                                   
     // Pretend we're starting an RMI client as the CLIENT_THREAD thread                                                  
