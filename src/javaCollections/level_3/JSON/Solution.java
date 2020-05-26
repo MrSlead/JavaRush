@@ -6,6 +6,7 @@ import java.io.StringWriter;
 import java.util.ArrayList;
 
 import com.fasterxml.jackson.annotation.JsonAutoDetect;
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.databind.ObjectMapper;
                                                
                                                   
@@ -46,7 +47,8 @@ public class Solution {
     }   
     
     @JsonAutoDetect                                             
-    public static class Cat extends Pet {                                                  
+    public static class Cat extends Pet {  
+    	@JsonIgnore
         public int age;                                                  
         public int weight;                                                  
     }                                                  
