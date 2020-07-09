@@ -1,9 +1,11 @@
+package javaCollections.level_4.Logging;
+
 import org.slf4j.Logger;                                                  
 import org.slf4j.LoggerFactory;                                                                                                   
 import java.util.Date;                                                  
                                                   
 /*                                                   
-Р”РѕР±Р°РІР»РµРЅРёРµ Р»РѕРіРёСЂРѕРІР°РЅРёСЏ РІ РєР»Р°СЃСЃ                                                  
+Добавление логирования в класс                                                  
 */                                                  
                                                   
 public class Solution {                                                  
@@ -77,17 +79,4 @@ public class Solution {
     	logger.debug("setValue3: this.value3 = value3");
         this.value3 = value3;                                                  
     }                                                  
-}                                                
-                                                  
-                                                  
-                                                  
-                                                  
-                                                  
-                                                  
-                                                  
-                                                  
-                                                  
-                                                  
-                                                  
-                                                  
-                                                  
+} 
